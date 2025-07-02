@@ -1,12 +1,58 @@
-# React + Vite
+# 🧾 Redux Toolkit To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A very simple and clean To-Do application built with **React** and **Redux Toolkit**. This app demonstrates basic usage of Redux state management — adding and removing tasks using a global store.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+👉 [https://mahnoorshabbir-reduxtoolkit-todo.vercel.app/](https://mahnoorshabbir-reduxtoolkit-todo.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ➕ Add new todos
+- ❌ Delete existing todos
+- 🧠 State management via Redux Toolkit `createSlice`
+- 🗂️ Centralized store setup using `configureStore`
+- ⚛️ Functional components using `useSelector` and `useDispatch`
+- 🎨 Minimal UI with clean alignment
+
+---
+
+## 📁 Folder Structure
+
+```txt
+src/
+├── app/
+│   └── store.js             # Redux store configuration
+│
+├── components/
+│   ├── AddTodo.jsx          # Input + Add button
+│   └── TodoItem.jsx         # Displays individual todos with delete
+│
+├── features/
+│   └── todo/
+│       └── todoSlice.js     # Redux Toolkit slice for todos
+│
+├── App.jsx                  # Main app layout and rendering todos
+├── main.jsx                 # Entry point with <Provider>
+└── index.css                # Global styles
+---
+## 🧠 How It Works
+
+- `todoSlice.js` defines the todo state and reducer actions  
+- `store.js` sets up the Redux store using `configureStore`  
+- The app is wrapped in `<Provider>` inside `main.jsx`  
+- `AddTodo.jsx` dispatches an action to add a todo  
+- `TodoItem.jsx` dispatches a remove action for each todo  
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React  
+- 🧠 Redux Toolkit  
+- ⚡ Vite  
+- 🎨 Tailwind CSS  
