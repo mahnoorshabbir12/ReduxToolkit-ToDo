@@ -7,7 +7,7 @@ function Todo() {
     const dispatch = useDispatch();
     return (
         <>
-  <div className="text-2xl font-bold mb-4">Todos</div>
+  <div className="text-2xl font-bold mb-4"></div>
 
   <div
     className="flex flex-col gap-2 max-h-96 overflow-y-auto pr-2"
