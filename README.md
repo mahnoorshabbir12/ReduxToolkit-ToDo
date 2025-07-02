@@ -21,6 +21,25 @@ A very simple and clean To-Do application built with **React** and **Redux Toolk
 
 ---
 
+## 🧠 How It Works
+
+- `todoSlice.js` defines the todo state and reducer actions  
+- `store.js` sets up the Redux store using `configureStore`  
+- The app is wrapped in `<Provider>` inside `main.jsx`  
+- `AddTodo.jsx` dispatches an action to add a todo  
+- `TodoItem.jsx` dispatches a remove action for each todo  
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React  
+- 🧠 Redux Toolkit  
+- ⚡ Vite  
+- 🎨 Tailwind CSS  
+
+---
+
 ## 📁 Folder Structure
 
 ```txt
@@ -40,19 +59,3 @@ src/
 ├── main.jsx                 # Entry point with <Provider>
 └── index.css                # Global styles
 ---
-## 🧠 How It Works
-
-- `todoSlice.js` defines the todo state and reducer actions  
-- `store.js` sets up the Redux store using `configureStore`  
-- The app is wrapped in `<Provider>` inside `main.jsx`  
-- `AddTodo.jsx` dispatches an action to add a todo  
-- `TodoItem.jsx` dispatches a remove action for each todo  
-
----
-
-## 🛠 Tech Stack
-
-- ⚛️ React  
-- 🧠 Redux Toolkit  
-- ⚡ Vite  
-- 🎨 Tailwind CSS  
